@@ -41,8 +41,10 @@ def simulate(steps, knots_number=1):
 
                 knots[knot] = H
                 knots[knot + 1] = T
+
             T = knots[-1]
             tail_visited_spaces[T] = True
+
     return len(tail_visited_spaces)
 
 
